@@ -8,6 +8,8 @@
 npm i
 ```
 
+Переименуйте файл .env.example в .env и заполните его
+
 First, run the development server:
 
 ```bash
