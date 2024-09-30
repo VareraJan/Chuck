@@ -1,12 +1,12 @@
-"use client";
+'use client'
 
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 export default function Home() {
-  const { replace } = useRouter();
-  useEffect(() => {
-    replace("/search");
-  }, [replace]);
-  return null;
+	const { replace } = useRouter()
+	useEffect(() => {
+		replace('/search')
+	}, [replace])
+	return null
 }

@@ -2,8 +2,6 @@ import { ChangeEvent, FC } from 'react'
 
 import { Input } from '../input'
 
-import { cn } from '@/lib/utils'
-
 interface ISearchTerm {
 	className?: string
 	searchTerm: string

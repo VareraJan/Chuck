@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { IJoke, IJokeList } from '@/shared/types/types'
+import { IJokeList } from '@/shared/types/types'
 
 import { SkeletonJokes } from '../ui/SkeletonJokes/SkeletonJokes'
 

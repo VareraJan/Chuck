@@ -4,7 +4,6 @@ import { FC } from 'react'
 
 import { JokesList } from '@/components/JokesList/JokesList'
 import SearchTerm from '@/components/ui/SearchTerm/SearchTerm'
-import { SkeletonJokes } from '@/components/ui/SkeletonJokes/SkeletonJokes'
 
 import { useSearchJokes } from '@/hooks/useSearchJokes'
 
