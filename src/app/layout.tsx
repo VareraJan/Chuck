@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
+import { metaFavicons } from '@/config/favicons.config'
 import { siteName } from '@/config/seo.config'
 
 import './globals.css'
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 	title: siteName,
 	description:
 		'Чак Норрис настолько крут, что тестовое при виде Чака написалось само!',
+	icons: metaFavicons,
 }
 
 export default function RootLayout({
