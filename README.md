@@ -1,5 +1,13 @@
 ## Getting Started
 
+Склонировать репозиторий в рабочую папку
+
+Установить зависимости:
+
+```bash
+npm i
+```
+
 First, run the development server:
 
 ```bash
