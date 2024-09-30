@@ -1,15 +1,16 @@
 import { FC } from 'react'
 
-import { IJoke } from '@/shared/types/types'
+import { IJoke, IJokeList } from '@/shared/types/types'
 
-import { JokesCard } from './JokesCard'
+import { SkeletonJokes } from '../ui/SkeletonJokes/SkeletonJokes'
 
-export const JokesList: FC<{ jokes: IJoke[] }> = ({ jokes }) => {
+import { JokeCard } from './JokeCard'
+
+export const JokesList: FC<IJokeList> = ({ jokes, isLoading }) => {
 	return (
 		<div className="mt-10 flex flex-wrap gap-2 w-full justify-center">
-			{jokes.map((joke) => (
-				<JokesCard key={joke.id} joke={joke} />
-			))}
+			{isLoading && <SkeletonJokes />}
+			{jokes && jokes.map((joke) => <JokeCard key={joke.id} joke={joke} />)}
 		</div>
 	)
 }

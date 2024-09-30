@@ -13,7 +13,7 @@ export const useSearchJokes = () => {
 		setSearchTerm(e.target.value)
 	}
 
-	const { isFetching, data, isSuccess } = useQuery({
+	const { isFetching, data, isSuccess, error } = useQuery({
 		queryKey: ['searchTerm in jokes', debouncedSearch],
 		queryFn: () => JokesService.searchJokes(debouncedSearch),
 		enabled: !!debouncedSearch && debouncedSearch.length >= 4,
@@ -22,5 +22,5 @@ export const useSearchJokes = () => {
 		staleTime: Infinity,
 	})
 
-	return { isFetching, data, searchTerm, handleSearch, isSuccess }
+	return { isFetching, data, searchTerm, handleSearch, isSuccess, error }
 }
